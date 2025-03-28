@@ -59,7 +59,6 @@ Model was evaluated using various performance metrics and visualizations:
 ![](reports/Confusion_Matrix.png) 
 📈 ROC Curve
 ![](reports/ROC_Curve.png)  
-|
 
 
 
