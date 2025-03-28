@@ -54,11 +54,9 @@ Model was evaluated using various performance metrics and visualizations:
 | |
 | :-: |
 |  🎯 Feature Correlation
-![](reports/Feature_Correlation.png) 
-|  
+![](reports/Feature_Correlation.png)  
 📊 Confusion Matrix
 ![](reports/Confusion_Matrix.png) 
-|
 📈 ROC Curve
 ![](reports/ROC_Curve.png)  
 |
