@@ -1,0 +1,10 @@
+training_data_set = pd.read_csv('train.csv', header=0)
+testing_data_set = pd.read_csv('test.csv', header=0)
+training_data_set = training_data_set.dropna()
+# testing_data_set = testing_data_set.dropna()
+    non_null_values_train = training_data_set[col].dropna()
+    non_null_values_test = testing_data_set[col].dropna()
+X.columns = X.columns.str.replace(' ', '_') 
+X_test.columns = X_test.columns.str.replace(' ', '_') 
+from sklearn.model_selection import train_test_split
+X_train, X_validation, y_train, y_validation = train_test_split(X, y, test_size = 0.2, random_state=42)
