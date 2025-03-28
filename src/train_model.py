@@ -18,7 +18,7 @@ hgb=HistGradientBoostingClassifier()
 ann = MLPClassifier(hidden_layer_sizes=(16,8),max_iter=55)
 cb = CatBoostClassifier(iterations=500, learning_rate=0.01,depth=10,verbose=0,allow_writing_files=False)
 
-model=VotingClassifier(estimators=[('lgb',lgb),('hgb',hgb),('ann',ann),('cb',cb)],voting='hard',verbose=0)
+model=VotingClassifier(estimators=[('lgb',lgb),('hgb',hgb),('ann',ann),('cb',cb)],voting='soft',verbose=0)
 
 model.fit(X_train,y_train)
 joblib.dump(model,'../models/trained_model.joblib')
